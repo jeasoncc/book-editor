@@ -44,7 +44,7 @@ The Secret Writing is a desktop application for Linux, MacOs and Windows.
 
 ---
 
-if you feel this repository good ,please give me a start.
+if you feel this repository good ,please give me a star.
 
 Thanks!
 
