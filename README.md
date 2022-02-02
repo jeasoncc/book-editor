@@ -11,6 +11,8 @@ Writing a good story is one of the most challenging things in life, but for many
 
 ![](https://s2.loli.net/2022/01/30/YmK68AqFgVyvhUb.png)
 
+![](https://s2.loli.net/2022/02/02/Bv5WXZzrI8q3eNy.jpg)
+
 ![](https://s2.loli.net/2022/01/30/D67vkpGy5HSYQol.png)
 
 ## How secret Writing helps you to write your novel
