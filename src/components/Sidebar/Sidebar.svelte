@@ -27,7 +27,7 @@
   import { push } from "svelte-spa-router";
   import { SceneInterface } from "src/schema/scene/scene.interface";
   import SceneContextMenu from "./component/SceneContextMenu.svelte";
-  import { isFullScreen } from "src/store";
+  import { isFullScreen,isSideNavOpen } from "src/store";
   import { routerLinkFn } from "src/tools/router-link-fn";
   import { ChapterInterface } from "src/schema/chapter/chapter.Interface";
   import ChapterContextMenu from "./component/ChapterContextMenu.svelte";
@@ -155,7 +155,7 @@
     bind:show={modals.editChapter.show}
     bind:data={modals.editChapter.data} />
   <EditScene bind:show={modals.editScene.show} {currentScene} />
-  <SideNav isOpen={true}>
+  <SideNav isOpen={$isSideNavOpen}>
     <SideNavItems>
       {#each filterChapters as chapter, chapterIndex}
         <div class="rightChapterMenuElement"

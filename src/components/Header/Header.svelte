@@ -56,6 +56,7 @@
 <Support show={showSupport} />
 {#if !$isFullScreen}
   <Header
+  persistentHamburgerMenu={true}
     company={$_('header.company.title')}
     style="-webkit-app-region:  no-drag"
     bind:isSideNavOpen={$isSideNavOpen}>

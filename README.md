@@ -5,6 +5,7 @@
 > It is perfect for writing novels, lyrics, poems,  essays, drafts and screenplays.
 
 [![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/xiaomiquan)
+[![安裝軟體敬請移駕 Snap Store](https://snapcraft.io/static/images/badges/tw/snap-store-black.svg)](https://snapcraft.io/xiaomiquan)
 
 Writing a good story is one of the most challenging things in life, but for many it is a dream worth pursuing.
 
