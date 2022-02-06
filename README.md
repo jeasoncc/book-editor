@@ -1,5 +1,15 @@
 # The best novel editor, from inspired idea to final draft
 
+![GitHub](https://img.shields.io/github/license/jeasoncc/Secret-writing?color=262626&style=for-the-badge)
+
+![GitHub repo size](https://img.shields.io:/github/repo-size/jeasoncc/Secret-writing?color=262626&style=for-the-badge)
+
+![GitHub language count](https://img.shields.io:/github/languages/count/jeasoncc/Secret-writing?color=262626&style=for-the-badge)
+
+![GitHub Repo stars](https://img.shields.io:/github/stars/jeasoncc/Secret-writing?style=social?color=262626&style=for-the-badge)
+
+
+
 > Secret Writing is a  next-generation plain text editor engineered for  creative writing,this software that help you to write your novel, in a simple way.
 >
 > It is perfect for writing novels, lyrics, poems,  essays, drafts and screenplays.
