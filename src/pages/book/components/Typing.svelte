@@ -69,7 +69,6 @@
   selectable
   bind:selectedRowIds
   zebra
-  expandable
   title={$_('overviewPage.talbe.title')}
   description={$_('overviewPage.talbe.description')}
   headers={headerConfig}
@@ -104,9 +103,9 @@
       {cell.value}
     {/if}
   </svelte:fragment>
-  <svelte:fragment slot="expanded-row" let:row>
+  <!-- <svelte:fragment slot="expanded-row" let:row>
     <pre>
       {JSON.stringify(row, null, 2)}
     </pre>
-  </svelte:fragment>
+  </svelte:fragment> -->
 </DataTable>
