@@ -1,6 +1,6 @@
 # The best novel editor, from inspired idea to final draft
 
-![GitHub](https://img.shields.io/github/license/jeasoncc/Secret-writing)![GitHub repo size](https://img.shields.io:/github/repo-size/jeasoncc/Secret-writing)![GitHub language count](https://img.shields.io:/github/languages/count/jeasoncc/Secret-writing)![GitHub Repo stars](https://img.shields.io:/github/stars/jeasoncc/Secret-writing?style=social)
+![GitHub](https://img.shields.io/github/license/jeasoncc/Secret-writing)   ![GitHub repo size](https://img.shields.io:/github/repo-size/jeasoncc/Secret-writing)   ![GitHub language count](https://img.shields.io:/github/languages/count/jeasoncc/Secret-writing)   ![GitHub Repo stars](https://img.shields.io:/github/stars/jeasoncc/Secret-writing?style=social)
 
 
 
