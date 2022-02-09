@@ -1,0 +1,16 @@
+name: xiaomiquan # you probably want to 'snapcraft register <name>'
+base: core20 # the base snap is the execution environment for this snap
+version: '0.0.85' # just for humans, typically '1.2+git' or '1.3.2'
+summary: Single-line elevator pitch for your amazing snap # 79 char long summary
+description: |
+  The idea of the novelist who writes guided only by the sacred fire of inspiration is quite naive
+  Writing a novel is like building a house. Words are bricks, but it's not enough to put one brick after another. If you build a house without a blueprint, it's bound to collapse
+  The Secret Writing gives you all tools you need to the architect and the carpenter of your novel
+
+grade: devel # must be 'stable' to release into candidate/stable channels
+confinement: devmode # use 'strict' once you have the right plugs and slots
+
+parts:
+  my-part:
+    # See 'snapcraft plugins'
+    plugin: nil
