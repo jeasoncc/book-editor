@@ -51,6 +51,30 @@ Analyze chapters length, time and locations in which character appear,their dist
 
 The Secret Writing is a desktop application for Linux, MacOs and Windows.
 
+## Built With
+
+- [svelte](https://svelte.dev)
+
+- [Electron](https://www.electronjs.org)
+
+- [Typescript](https://www.tslang.cn)
+
+## License
+
+This work is licensed under a GPL License 3.0.
+
+
+## Getting started
+
+```bash
+git clone https://github.com/jeasoncc/Secret-writing
+```
+```bash
+yarn
+```
+```bash
+yarn dev
+```
 ---
 
 if you feel this repository good ,please give me a star.
