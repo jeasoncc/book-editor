@@ -11,7 +11,7 @@
 
 </script>
 
-<Grid padding={false} fullWidth>
+<Grid fullWidth>
   <Row>
     <Column>
       <Tile>

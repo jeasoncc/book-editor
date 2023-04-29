@@ -37,7 +37,7 @@
       <Tag size="sm" type="high-contrast" icon={UserAvatar16}>
         {currenProject.author}
       </Tag>
-      <Tag size="sm" type="high-contrast" icon={Edit16}>{wordsNum}</Tag>
+      
       {#if $isLoading}
         <Tag size="sm" type="high-contrast">
           <Loading
@@ -50,13 +50,14 @@
       {#if $isSaved}
         <Tag size="sm" type="high-contrast" icon={Checkmark16}>已经保存</Tag>
       {/if}
-      <Tag
+      <Tag size="sm" style="margin-left:auto" type="high-contrast" icon={Edit16}>{wordsNum}</Tag>
+      <!-- <Tag
         style="margin-left:auto"
         size="sm"
         type="high-contrast"
         icon={TrainSpeed16}>
         100WPM
-      </Tag>
+      </Tag> -->
     </Row>
   </Grid>
 </footer>

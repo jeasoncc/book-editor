@@ -79,20 +79,13 @@ header {
 
 #main-content {
   position: relative;
-  height: calc(100vh - 3rem - 2rem);
+  height: calc(100vh - 3.8rem);
   overflow-y: scroll;
-  margin-top: 2rem;
+  /* outline: solid 1px red; */
+  /* background: red; */
+  /* margin-top: 2rem; */
 }
-.writetoolBar {
-  /* position: sticky;
-top: 0; */
-/* z-index: 100;
-background: red;
-border: solid;
 
-height: auto;
-min-height: auto; */
-}
 .name-tip {
   background: red;
 }

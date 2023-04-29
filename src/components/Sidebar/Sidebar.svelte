@@ -20,7 +20,6 @@
   import AlignBoxBottomCenter16 from "carbon-icons-svelte/lib/AlignBoxBottomCenter16";
   import AddAlt16 from "carbon-icons-svelte/lib/AddAlt16";
   import Edit16 from "carbon-icons-svelte/lib/Edit16";
-  import nzhcn from "nzh/cn";
   import { ProjectClass } from "src/schema/project/project.class";
   import { get } from "svelte/store";
   import ArrowLeft16 from "carbon-icons-svelte/lib/ArrowLeft16";
@@ -96,7 +95,7 @@
     const currentScenes = get(scenes).filter(
       (cur: SceneInterface) => cur.chapter === chapterId
     );
-    nextSceneTitle = `第${nzhcn.encodeS(currentScenes.length + 1)}章：`;
+    nextSceneTitle = ``;
     modals.createScene.chapter = chapterId;
     modals.createScene.show = true;
   };
