@@ -15,9 +15,7 @@
 [![安裝軟體敬請移駕 Snap Store](https://snapcraft.io/static/images/badges/tw/snap-store-black.svg)](https://snapcraft.io/xiaomiquan)
 
 
-## 项目介紹
-
-此項目，是因爲自己從事書籍寫作時產生的項目。在寫作的過程當中，產生了很多私人化的需求，也是一些自己在寫作當中的必備的功能。
+**项目介紹**：此項目，是因爲自己從事書籍寫作時產生的項目。在寫作的過程當中，產生了很多私人化的需求，也是一些自己在寫作當中的必備的功能。
 
 爲了提供書記寫作所必備的所有功能，遂有此項目。
 
@@ -29,16 +27,24 @@
 出於快速開發的目標，選取了JS的技術棧，採用的Electron這一套東西，目前看起來還事比較穩定，暫時並未出現性能的問題。另外一個原因是爲了美觀，H5做的東西，論好看還是最好看的。
 
 技術方案:
-*  Sevelte
-*  Electron
-*  Typescript
-*  LocalForge
+Sevelte + Electron + Typescript + LocalForge
 
-
+    +----------+     +------------+     +------------+
+    | Electron | --> |            | <-- | Typescript |
+    +----------+     | BookEditor |     +------------+
+                     |            |     +------------+
+                     |            | <-- | LocalForge |
+                     +------------+     +------------+
+                       ^
+                       |
+                       |
+                     +------------+
+                     |  Sevelte   |
+                     +------------+
 ---
 安裝使用
 
-**Linux:**
+Linux:
 
 ```bash
 sudo snap install xiaomiquan
@@ -47,6 +53,6 @@ sudo snap install xiaomiquan
 **源碼安裝**:
 
 ```bash
-git clone https://github.com/jeasoncc/Secret-writing && yarn && yarn dev
+git clone git@github.com:jeasoncc/book-editor.git   && yarn && yarn dev
 ```
 
