@@ -1,6 +1,6 @@
 {
   "name": "xiaomiquan",
-  "version": "0.0.85",
+  "version": "0.1",
   "main": "./src/electron.js",
   "author": {
     "name": "jeasonchen",
@@ -146,12 +146,7 @@
     "svelte-build": "cross-env NODE_ENV=production webpack",
     "prepare:license": "license-checker --exclude \"MIT\" --json --customPath ./src/licenses.json > ./src/licenses.json",
     "pure-electron": "electron .",
-    "cap:sync": "cap sync",
-    "lint": "eslint --fix src/",
-    "prettier": "prettier --write --plugin-search-dir= ./src/**/*.{js,ts,svelte,json,scss}",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "pack:linux": "electron-packager . --overwrite --asar --platform=linux --arch=x64 --icon=./build/icon.png  --out=distlinux",
+    "cap:sync": "cap sync", "lint": "eslint --fix src/", "prettier": "prettier --write --plugin-search-dir= ./src/**/*.{js,ts,svelte,json,scss}", "storybook": "start-storybook -p 6006", "build-storybook": "build-storybook", "pack:linux": "electron-packager . --overwrite --asar --platform=linux --arch=x64 --icon=./build/icon.png  --out=distlinux",
     "pack:deb": "electron-installer-debian --src distlinux/xiaomiquan-linux-x64/  --arch amd64 --config debian.json",
     "pack:win": "electron-packager . --overwrite --platform=win32  --arch=x64 --out=distwin",
     "pack:win32": "electron-packager . --overwrite --platform=win32  --arch=ia32 --out=distwin32",
