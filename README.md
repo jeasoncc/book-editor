@@ -26,6 +26,9 @@
 ---
 出於快速開發的目標，選取了JS的技術棧，採用的Electron這一套東西，目前看起來還事比較穩定，暫時並未出現性能的問題。另外一個原因是爲了美觀，H5做的東西，論好看還是最好看的。
 
+![圖片說明](https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,w_1638,h_920/https://dashboard.snapcraft.io/site_media/appmedia/2022/01/2022-01-08_21-50-45%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE3.jpeg)
+
+![圖片說明2](https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,w_1638,h_920/https://dashboard.snapcraft.io/site_media/appmedia/2022/01/2022-01-08_21-57-55%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png)
 技術方案:
 Sevelte + Electron + Typescript + LocalForge
 
@@ -41,6 +44,7 @@ Sevelte + Electron + Typescript + LocalForge
                      +------------+
                      |  Sevelte   |
                      +------------+
+
 ---
 安裝使用
 
