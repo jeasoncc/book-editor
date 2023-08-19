@@ -11,10 +11,7 @@ my $node3 = $ge->add_node('Electron');
 my $node4 = $ge->add_node('BookEditor');
 
 # 添加边
-$ge->add_edge($node0, $node1);
-$ge->add_edge($node0, $node2);
-$ge->add_edge($node0, $node3);
-
+$ge->add_edge($node0, $node4);
 $ge->add_edge($node1, $node4);
 $ge->add_edge($node2, $node4);
 $ge->add_edge($node3, $node4);

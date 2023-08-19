@@ -25,9 +25,6 @@
 
 </script>
 
-<!-- <ImageLoader
-src='https://dogefs.s3.ladydaily.com/~/source/unsplash/photo-1682589182188-47f6f590d77d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80'
-/> -->
 <Modal
   open={showCreateProject}
   modalHeading={`${$_('overview.modals.newProject.header')}`}

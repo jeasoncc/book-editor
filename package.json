@@ -1,24 +1,25 @@
 {
-  "name": "xiaomiquan",
+  "name": "EpicCraft",
   "version": "0.1",
   "main": "./src/electron.js",
   "author": {
-    "name": "jeasonchen",
+    "name": "Jeason",
     "email": "xiaomiquan@aliyun.com"
   },
   "keywords": [
-    "electron",
-    "editor",
-    "novel",
-    "story",
-    "write"
+    "EpicCraft",
+    "Story",
+    "Novel",
+    "Epic",
+    "Write",
+    "Book"
   ],
-  "description": " 一款专门用来写小说和剧本的软件 \n「A text editor engineered for creative writing.」 ",
-  "homepage": "https://gitee.com/jeasonche",
+  "description": "The Ultimate Writing Tool for Epic Storytellers. ",
+  "homepage": "",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://gitee.com/jeasonchen/writing-software"
+    "url": ""
   },
   "dependencies": {
     "@capacitor/android": "^2.4.7",
