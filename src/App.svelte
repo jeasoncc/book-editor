@@ -30,6 +30,7 @@
 
   const routeLoaded = () => {
     console.log("路由守卫");
+    console.log("老实说，我也不知道这是什么");
   };
 
   onMount(async () => {

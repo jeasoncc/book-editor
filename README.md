@@ -1,3 +1,4 @@
+
                  ______________________________________________________________________
                 /     ___       ____              __      ______    ___ __             \
                 |    /   |     / __ )____  ____  / /__   / ____/___/ (_) /_____  _____ |
@@ -7,24 +8,57 @@
                 \                                                                      /
                  ----------------------------------------------------------------------
 
-Introducing EpicCraft - The Ultimate Writing Tool for Epic Storytellers
+此項目用於以書本爲目標的寫作者，網文作者、長篇小說作者、出書的作者。針對長篇寫作，提供各種定製化功能。
 
-Are you an aspiring novelist, a passionate writer of epic tales, or a seasoned author looking for the perfect writing companion? Look no further! EpicCraft is here to revolutionize your writing experience.
-
-EpicCraft is a specialized writing editor meticulously designed for authors of long-form narratives, such as epic novels, web fiction, and more. With its powerful features and intuitive interface, EpicCraft provides a seamless and immersive environment for crafting your epic stories.
-
-Key Features:
-1. Distraction-Free Writing: Dive into your creative flow with a clutter-free interface that keeps you focused on your words and ideas.
-2. Story Organization: Seamlessly organize your chapters, scenes, and characters, allowing you to effortlessly navigate through your narrative.
-3. Worldbuilding Tools: Create and manage intricate story worlds with dedicated tools for mapping locations, tracking timelines, and developing rich lore.
-4. Revision and Collaboration: Collaborate with editors and fellow writers, and easily track changes and revisions to enhance your storytelling process.
-5. Customizable Writing Environment: Tailor EpicCraft to your preferences with customizable themes, fonts, and layouts, ensuring a personalized writing experience.
-
-Unleash your imagination, unleash the epic! Whether you're embarking on a heroic fantasy saga or unraveling a captivating mystery, EpicCraft empowers you to bring your grand vision to life.
-
-Don't settle for ordinary writing tools when you can have an extraordinary one. Join the league of epic storytellers and experience the power of EpicCraft today.
-
-Visit our website at www.epiccraft.com to learn more and embark on your epic writing journey!
+![GitHub](https://img.shields.io/github/license/jeasoncc/Secret-writing)   ![GitHub repo size](https://img.shields.io:/github/repo-size/jeasoncc/Secret-writing)   ![GitHub language count](https://img.shields.io:/github/languages/count/jeasoncc/Secret-writing)   ![GitHub Repo stars](https://img.shields.io:/github/stars/jeasoncc/Secret-writing?style=social)
 
 
+[![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/xiaomiquan)
+[![安裝軟體敬請移駕 Snap Store](https://snapcraft.io/static/images/badges/tw/snap-store-black.svg)](https://snapcraft.io/xiaomiquan)
+
+
+**项目介紹**：此項目，是因爲自己從事書籍寫作時產生的項目。在寫作的過程當中，產生了很多私人化的需求，也是一些自己在寫作當中的必備的功能。
+
+爲了提供書記寫作所必備的所有功能，遂有此項目。
+
+由於本人目前並未從事小說寫作的工作，因此此項目暫時擱置了下來，人會去做一件事情，只是因爲這件事情對於自己有意義。而無所謂其他事情。等我再次想要寫作，從事寫書的時候，我會再次撿起來這個項目。
+
+如果有自己對此項目感興趣，請自行拉取代碼。
+
+---
+出於快速開發的目標，選取了JS的技術棧，採用的Electron這一套東西，目前看起來還事比較穩定，暫時並未出現性能的問題。另外一個原因是爲了美觀，H5做的東西，論好看還是最好看的。
+
+![圖片說明](https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,w_1638,h_920/https://dashboard.snapcraft.io/site_media/appmedia/2022/01/2022-01-08_21-50-45%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE3.jpeg)
+
+![圖片說明2](https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,w_1638,h_920/https://dashboard.snapcraft.io/site_media/appmedia/2022/01/2022-01-08_21-57-55%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png)
+技術方案:
+Sevelte + Electron + Typescript + LocalForge
+
+    +----------+     +------------+     +------------+
+    | Electron | --> |            | <-- | Typescript |
+    +----------+     | BookEditor |     +------------+
+                     |            |     +------------+
+                     |            | <-- | LocalForge |
+                     +------------+     +------------+
+                       ^
+                       |
+                       |
+                     +------------+
+                     |  Sevelte   |
+                     +------------+
+
+---
+安裝使用
+
+Linux:
+
+```bash
+sudo snap install xiaomiquan
+```
+
+**源碼安裝**:
+
+```bash
+git clone git@github.com:jeasoncc/book-editor.git   && yarn && yarn dev
+```
 
