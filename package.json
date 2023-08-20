@@ -40,7 +40,7 @@
     "pack:win": "electron-packager . --overwrite --platform=win32  --arch=x64 --out=distwin",
     "pack:win32": "electron-packager . --overwrite --platform=win32  --arch=ia32 --out=distwin32",
     "pack:wininstaller": "electron-installer-windows --src distwin/xiaomiquanwrite-win32-x64/ --dest distwin/installers/",
-    "pack": "electron-builder --dir",
+    "dist-dev": "electron-builder --dir",
     "dist": "electron-builder",
     "distwin": "electron-builder --windows nsis:ia32"
   },

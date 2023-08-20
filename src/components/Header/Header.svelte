@@ -57,8 +57,7 @@
 {#if !$isFullScreen}
   <Header
   persistentHamburgerMenu={true}
-    company={$_('header.company.title')}
-    style="-webkit-app-region:  no-drag"
+    company='Circle'
     bind:isSideNavOpen={$isSideNavOpen}>
     <div slot="skip-to-content">
       <SkipToContent />
@@ -67,14 +66,14 @@
       <HeaderNavItem
         style="-webkit-app-region: no-drag"
         on:click={() => push('/book')}
-        text={$_('header.overview.title')} />
+        text='Overview' />
       <HeaderNavItem
         on:click={() => push('/book/cards/')}
-        text={$_('header.roles.title')} />
-      <!-- <HeaderNavItem
+        text="" />
+      <HeaderNavItem
       style="-webkit-app-region: no-drag"
       on:click={() => push('/book/export/')}
-      text="大纲" />
+      text="Outline" />
     <HeaderNavItem
       style="-webkit-app-region: no-drag"
       on:click={() => push('/book/export/')}
@@ -82,15 +81,15 @@
     <HeaderNavItem
       style="-webkit-app-region: no-drag"
       on:click={() => push('/book/export/')}
-      text="时间线" /> -->
+      text="TimeLine" />
       <HeaderNavItem
         style="-webkit-app-region: no-drag"
         on:click={() => push('/book/settings/')}
-        text={$_('header.settings.title')} />
+        text="Setting" />
       <HeaderNavItem
         style="-webkit-app-region: no-drag"
         on:click={() => push('/book/export/')}
-        text={$_('header.export.title')} />
+        text="Export" />
     </HeaderNav>
     <HeaderUtilities style="-webkit-app-region: no-drag">
       <HeaderAction
