@@ -96,7 +96,7 @@
         style="-webkit-app-region: no-drag"
         bind:isOpen={navigationState}>
         <HeaderPanelLinks>
-          <HeaderPanelDivider>{$_('header.recently')}</HeaderPanelDivider>
+          <HeaderPanelDivider>2121</HeaderPanelDivider>
           {#each sceneData as scene}
             <HeaderPanelLink on:click={() => routerLinkFn(scene.id)}>
               <div>{scene.title}</div>

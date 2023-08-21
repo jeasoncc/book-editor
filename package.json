@@ -161,12 +161,12 @@
     "workbox-window": "^5.1.4"
   },
   "build": {
-    "appId": "xmq",
-    "productName": "小密圈码字",
+    "appId": "EpicCraft",
+    "productName": "EpicCraft",
     "compression": "normal",
     "asar": true,
     "linux": {
-      "desktop": "小密圈码字",
+      "desktop": "EpicCraft",
       "category": "Office",
       "icon": "./build/icon.png",
       "target": [

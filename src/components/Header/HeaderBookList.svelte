@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import Line from "../svg/line.svelte";
   import {
     closeWindow,
@@ -23,7 +23,7 @@
 
 <Support bind:show={showHelp} />
 <Header
-  company={$_('overviewListPage.company.title')}
+  company='Circle'
   style="-webkit-app-region:  no-drag">
   <HeaderUtilities style="-webkit-app-region: no-drag">
     <HeaderGlobalAction
