@@ -31,6 +31,14 @@
 ![圖片說明](https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,w_1638,h_920/https://dashboard.snapcraft.io/site_media/appmedia/2022/01/2022-01-08_21-50-45%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE3.jpeg)
 
 ![圖片說明2](https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,w_1638,h_920/https://dashboard.snapcraft.io/site_media/appmedia/2022/01/2022-01-08_21-57-55%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png)
+
+
+
+
+![](https://s3.bmp.ovh/imgs/2023/09/03/c30b79ee09894f3b.png)
+![](https://s3.bmp.ovh/imgs/2023/09/03/393ce5bd8477d8f6.png)
+![](https://s3.bmp.ovh/imgs/2023/09/03/1f10f94502650c66.png)
+![](https://s3.bmp.ovh/imgs/2023/09/03/38bb92a6dc1abf43.png)
 技術方案:
 Sevelte + Electron + Typescript + LocalForge
 
