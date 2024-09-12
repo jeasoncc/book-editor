@@ -7,11 +7,23 @@ import { StateClass } from "../../schema/state/state.class";
 import { SettingClass } from "../../schema/setting/setting.class";
 
 localforage.config({
-  name: "xmqwrite",
-  storeName: "xmq", // Should be alphanumeric, with underscores.
-  description: "小密圈写作数据中心",
-  version: 1.0,
+  name: "book-editor",
+  storeName: "book-config", // Should be alphanumeric, with underscores.
+  description: "sql-data",
+  version: 2.0,
 });
+
+var store = localforage.createInstance({
+  name: "nameHere"
+});
+
+var otherStore = localforage.createInstance({
+  name: "otherName"
+});
+
+// Setting the key on one of these doesn't affect the other.
+store.setItem("key", "value");
+otherStore.setItem("key", "value2");
 const defaultIntern = {
   version: "1.1.0",
   installed: false,

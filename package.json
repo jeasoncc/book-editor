@@ -1,18 +1,17 @@
 {
-  "name": "EpicCraft",
-  "version": "0.1.0",
+  "name": "book-editor",
+  "version": "0.1.1",
   "main": "./src/electron.js",
   "author": {
-    "name": "Jeason",
+    "name": "martin",
     "email": "xiaomiquan@aliyun.com"
   },
   "keywords": [
-    "EpicCraft",
-    "Story",
-    "Novel",
-    "Epic",
-    "Write",
-    "Book"
+    "book-editor",
+    "story",
+    "novel",
+    "write",
+    "book"
   ],
   "description": "The Ultimate Writing Tool for Epic Storytellers. ",
   "homepage": "",
@@ -82,8 +81,6 @@
     "mousetrap": "^1.6.5",
     "node-fetch": "^2.6.1",
     "nzh": "^1.0.5",
-    "omnia-ebook-generator": "^0.2.1",
-    "omnia-editor": "^0.1.0",
     "rxjs": "^7.4.0",
     "semver": "^7.3.5",
     "sortablejs": "^1.13.0",
@@ -136,7 +133,6 @@
     "jest-transform-svelte": "^2.1.1",
     "license-checker": "^25.0.1",
     "mini-css-extract-plugin": "^0.11.3",
-    "normalize.css": "^8.0.1",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.5",
     "postcss-loader": "^6.2.1",
@@ -147,7 +143,6 @@
     "style-loader": "^1.3.0",
     "svelte": "^3.35.0",
     "svelte-htm": "^1.1.1",
-    "svelte-i18n": "^3.3.7",
     "svelte-jester": "^1.3.2",
     "svelte-loader": "^3.1.2",
     "svelte-preprocess": "^4.10.0",

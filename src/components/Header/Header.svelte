@@ -77,7 +77,7 @@
     <HeaderNavItem
       style="-webkit-app-region: no-drag"
       on:click={() => push('/book/export/')}
-      text="地图" />
+      text="Map" />
     <HeaderNavItem
       style="-webkit-app-region: no-drag"
       on:click={() => push('/book/export/')}

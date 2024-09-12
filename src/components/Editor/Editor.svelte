@@ -117,6 +117,7 @@
     background-color: inherit;
     display: flex;
     flex-direction: row;
+    background:red;
   }
   @media (max-width: 960px) {
     .omnia-editor {

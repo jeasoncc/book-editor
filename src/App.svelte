@@ -9,28 +9,28 @@
   import { routes } from "src/routes/route.overview.config";
   import { settings } from "./db/storeSettings";
 
-  locale.set($settings.language);
-  $: document.documentElement.setAttribute("theme", $settings.theme);
+ locale.set($settings.language);
+ $: document.documentElement.setAttribute("theme", $settings.theme);
   $: {
-    locale.set($settings.language);
+    locale.set('en');
   }
-  const wb = new Workbox("./service-worker.js");
+ // const wb = new Workbox("./service-worker.js");
 
   /**
    * Register Service Worker.
    */
-  if (
-    "serviceWorker" in navigator &&
-    !isRunningCapacitor &&
-    !isRunningElectron &&
-    window.location.hostname !== "localhost"
-  ) {
-    wb.register();
-  }
+ // if (
+ //   "serviceWorker" in navigator &&
+ //   !isRunningCapacitor &&
+ //   !isRunningElectron &&
+ //   window.location.hostname !== "localhost"
+ // ) {
+ //   wb.register();
+ // }
 
   const routeLoaded = () => {
     console.log("路由守卫");
-    console.log("老实说，我也不知道这是什么");
+    console.log("路由守卫1");
   };
 
   onMount(async () => {
