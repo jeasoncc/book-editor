@@ -4,8 +4,8 @@
   export let show: boolean = false;
 
   export const toggle_fn = (args: boolean) => {
-    return !args
-  }
+    return !args;
+  };
 
 </script>
 
@@ -18,6 +18,5 @@
   on:close={() => (show = !show)}>
   <h2 slot="header">help</h2>
 
-    <p>If you need Help, you can send message xiaomiquan@aliyun.com</p>
-
+  <p>If you need Help, you can send message xiaomiquan@aliyun.com</p>
 </Modal>

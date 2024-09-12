@@ -22,9 +22,7 @@
 </script>
 
 <Support bind:show={showHelp} />
-<Header
-  company='Circle'
-  style="-webkit-app-region:  no-drag">
+<Header company="Circle" style="-webkit-app-region:  no-drag">
   <HeaderUtilities style="-webkit-app-region: no-drag">
     <HeaderGlobalAction
       aria-label="帮助"

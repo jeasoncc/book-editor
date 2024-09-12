@@ -51,13 +51,4 @@
 </div>
 
 <style>
-  .omnia-block {
-    display: flex;
-    align-items: flex-start;
-    column-gap: 1rem;
-    padding: 1.5rem 0;
-    background: red;
-    /* text-indent:2em; */
-  }
-
 </style>

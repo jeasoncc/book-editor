@@ -56,8 +56,8 @@
 <Support show={showSupport} />
 {#if !$isFullScreen}
   <Header
-  persistentHamburgerMenu={true}
-    company='Circle'
+    persistentHamburgerMenu={true}
+    company="Circle"
     bind:isSideNavOpen={$isSideNavOpen}>
     <div slot="skip-to-content">
       <SkipToContent />
@@ -66,22 +66,20 @@
       <HeaderNavItem
         style="-webkit-app-region: no-drag"
         on:click={() => push('/book')}
-        text='Overview' />
+        text="Overview" />
+      <HeaderNavItem on:click={() => push('/book/cards/')} text="" />
       <HeaderNavItem
-        on:click={() => push('/book/cards/')}
-        text="" />
+        style="-webkit-app-region: no-drag"
+        on:click={() => push('/book/export/')}
+        text="Outline" />
       <HeaderNavItem
-      style="-webkit-app-region: no-drag"
-      on:click={() => push('/book/export/')}
-      text="Outline" />
-    <HeaderNavItem
-      style="-webkit-app-region: no-drag"
-      on:click={() => push('/book/export/')}
-      text="Map" />
-    <HeaderNavItem
-      style="-webkit-app-region: no-drag"
-      on:click={() => push('/book/export/')}
-      text="TimeLine" />
+        style="-webkit-app-region: no-drag"
+        on:click={() => push('/book/export/')}
+        text="Map" />
+      <HeaderNavItem
+        style="-webkit-app-region: no-drag"
+        on:click={() => push('/book/export/')}
+        text="TimeLine" />
       <HeaderNavItem
         style="-webkit-app-region: no-drag"
         on:click={() => push('/book/settings/')}

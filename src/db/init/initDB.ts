@@ -14,11 +14,11 @@ localforage.config({
 });
 
 var store = localforage.createInstance({
-  name: "nameHere"
+  name: "nameHere",
 });
 
 var otherStore = localforage.createInstance({
-  name: "otherName"
+  name: "otherName",
 });
 
 // Setting the key on one of these doesn't affect the other.

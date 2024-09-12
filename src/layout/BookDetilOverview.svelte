@@ -15,7 +15,7 @@
   import { scenes } from "src/db/storeScenes";
   import { onMount } from "svelte";
   import { setInitTyping } from "src/db/init/initTyping";
-  
+
   const routeLoaded = (value: any) => {
     console.log(value);
   };
