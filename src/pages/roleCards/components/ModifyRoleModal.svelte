@@ -6,7 +6,7 @@
   import FormGroup from "carbon-components-svelte/src/FormGroup/FormGroup.svelte";
   import Toggle from "carbon-components-svelte/src/Toggle/Toggle.svelte";
   import RoleInterface from "../../../schema/role/role.interface";
-  import InputTag from "./../../../components/Forms/InputTag.svelte";
+  import InputTag from "./../../../components/forms/InputTag.svelte";
   import { _ } from "svelte-i18n";
   export let showModifyRole: boolean;
   export let role: RoleInterface;

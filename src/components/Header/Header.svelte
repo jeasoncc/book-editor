@@ -56,9 +56,8 @@
 <Support show={showSupport} />
 {#if !$isFullScreen}
   <Header
-  persistentHamburgerMenu={true}
-    company={$_('header.company.title')}
-    style="-webkit-app-region:  no-drag"
+    persistentHamburgerMenu={true}
+    company="Circle"
     bind:isSideNavOpen={$isSideNavOpen}>
     <div slot="skip-to-content">
       <SkipToContent />
@@ -67,37 +66,35 @@
       <HeaderNavItem
         style="-webkit-app-region: no-drag"
         on:click={() => push('/book')}
-        text={$_('header.overview.title')} />
-      <HeaderNavItem
-        on:click={() => push('/book/cards/')}
-        text={$_('header.roles.title')} />
-      <!-- <HeaderNavItem
-      style="-webkit-app-region: no-drag"
-      on:click={() => push('/book/export/')}
-      text="大纲" />
-    <HeaderNavItem
-      style="-webkit-app-region: no-drag"
-      on:click={() => push('/book/export/')}
-      text="地图" />
-    <HeaderNavItem
-      style="-webkit-app-region: no-drag"
-      on:click={() => push('/book/export/')}
-      text="时间线" /> -->
-      <HeaderNavItem
-        style="-webkit-app-region: no-drag"
-        on:click={() => push('/book/settings/')}
-        text={$_('header.settings.title')} />
+        text="Overview" />
+      <HeaderNavItem on:click={() => push('/book/cards/')} text="" />
       <HeaderNavItem
         style="-webkit-app-region: no-drag"
         on:click={() => push('/book/export/')}
-        text={$_('header.export.title')} />
+        text="Outline" />
+      <HeaderNavItem
+        style="-webkit-app-region: no-drag"
+        on:click={() => push('/book/export/')}
+        text="Map" />
+      <HeaderNavItem
+        style="-webkit-app-region: no-drag"
+        on:click={() => push('/book/export/')}
+        text="TimeLine" />
+      <HeaderNavItem
+        style="-webkit-app-region: no-drag"
+        on:click={() => push('/book/settings/')}
+        text="Setting" />
+      <HeaderNavItem
+        style="-webkit-app-region: no-drag"
+        on:click={() => push('/book/export/')}
+        text="Export" />
     </HeaderNav>
     <HeaderUtilities style="-webkit-app-region: no-drag">
       <HeaderAction
         style="-webkit-app-region: no-drag"
         bind:isOpen={navigationState}>
         <HeaderPanelLinks>
-          <HeaderPanelDivider>{$_('header.recently')}</HeaderPanelDivider>
+          <HeaderPanelDivider>2121</HeaderPanelDivider>
           {#each sceneData as scene}
             <HeaderPanelLink on:click={() => routerLinkFn(scene.id)}>
               <div>{scene.title}</div>

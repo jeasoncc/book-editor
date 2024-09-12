@@ -89,9 +89,9 @@ const storeScenes = () => {
       update(n => {
         return n.filter(n => n.id !== id);
       }),
-      removeAllChapterScenes: (id: string) =>
+    removeAllChapterScenes: (id: string) =>
       update((n: SceneInterface[]) => {
-        return n.filter((n:SceneInterface) => n.chapter !== id);
+        return n.filter((n: SceneInterface) => n.chapter !== id);
       }),
     /**
      * Removes all scenes from chapter.

@@ -16,7 +16,7 @@ export class StateClass implements StateInterface {
     lastCloudSave: string = "",
     lastLocalSave: string = "",
     currentProject: string = "",
-    currentChapter:string="",
+    currentChapter: string = "",
     currentScene: string = "",
     currentTitle: string = "",
     currentTyping: string = ""
@@ -26,7 +26,7 @@ export class StateClass implements StateInterface {
     this.lastCloudSave = lastCloudSave;
     this.lastLocalSave = lastLocalSave;
     this.currentProject = currentProject;
-    this.currentChapter = currentChapter
+    this.currentChapter = currentChapter;
     this.currentScene = currentScene;
     this.currentTitle = currentTitle;
     this.currentTyping = currentTyping;

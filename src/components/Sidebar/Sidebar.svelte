@@ -26,7 +26,7 @@
   import { push } from "svelte-spa-router";
   import { SceneInterface } from "src/schema/scene/scene.interface";
   import SceneContextMenu from "./component/SceneContextMenu.svelte";
-  import { isFullScreen,isSideNavOpen } from "src/store";
+  import { isFullScreen, isSideNavOpen } from "src/store";
   import { routerLinkFn } from "src/tools/router-link-fn";
   import { ChapterInterface } from "src/schema/chapter/chapter.Interface";
   import ChapterContextMenu from "./component/ChapterContextMenu.svelte";
@@ -37,12 +37,12 @@
   let currentScene: SceneInterface = undefined;
   let currentChapter: ChapterInterface = undefined;
 
-  let filterChapters: ChapterInterface [] = []
-  let showSceneContentMenu = false
-  let showChapterContentMenu = false
+  let filterChapters: ChapterInterface[] = [];
+  let showSceneContentMenu = false;
+  let showChapterContentMenu = false;
 
   $: {
-    if ($chapters.length && $scenes.length) {        
+    if ($chapters.length && $scenes.length) {
       chapterTargetElements = Array.from(
         document.querySelectorAll(".rightChapterMenuElement")
       );
@@ -62,12 +62,14 @@
     }
   }
   $: {
-    if($projects.length && $state.currentProject && $chapters.length) {
-      filterChapters = JSON.parse(JSON.stringify(
-        $chapters
-        .filter(chapter => chapter.project == $state.currentProject)
-        .sort((a, b) => a.order - b.order)
-        ))
+    if ($projects.length && $state.currentProject && $chapters.length) {
+      filterChapters = JSON.parse(
+        JSON.stringify(
+          $chapters
+            .filter(chapter => chapter.project == $state.currentProject)
+            .sort((a, b) => a.order - b.order)
+        )
+      );
     }
   }
   const modals = {
@@ -100,20 +102,20 @@
     modals.createScene.show = true;
   };
 
-  const editChapterFn = (chapter:ChapterInterface) => {
+  const editChapterFn = (chapter: ChapterInterface) => {
     modals.editChapter.data = chapter;
     modals.editChapter.show = true;
   };
 
   const editScene = event => {
-    console.info(event)
+    console.info(event);
     // modals.editScene.data = event.detail;
     modals.editScene.show = true;
   };
 
   const deleteChapterFn = () => {
-    removeChapter(currentChapter.id, () => console.log("2121"))
-  }
+    removeChapter(currentChapter.id, () => console.log("2121"));
+  };
 
   const deleteSceneFn = e => {
     let confirmed = confirm("请确认删除?");
@@ -128,19 +130,17 @@
 </script>
 
 {#if $state.currentProject && !$isFullScreen}
-  {#if chapterTargetElements.length} 
-    <ChapterContextMenu 
-     targetElements = {chapterTargetElements}
-     deleteFn={deleteChapterFn}
-     editFn={editScene}
-    />
+  {#if chapterTargetElements.length}
+    <ChapterContextMenu
+      targetElements={chapterTargetElements}
+      deleteFn={deleteChapterFn}
+      editFn={editScene} />
   {/if}
-  {#if sceneTargetElements.length} 
-    <SceneContextMenu 
-      targetElements = {sceneTargetElements} 
-      deleteFn={deleteSceneFn} 
-      editFn={editScene}
-    />
+  {#if sceneTargetElements.length}
+    <SceneContextMenu
+      targetElements={sceneTargetElements}
+      deleteFn={deleteSceneFn}
+      editFn={editScene} />
   {/if}
 
   <EditProject {book} bind:show={modals.editProject} />
@@ -157,55 +157,54 @@
   <SideNav isOpen={$isSideNavOpen}>
     <SideNavItems>
       {#each filterChapters as chapter, chapterIndex}
-        <div class="rightChapterMenuElement"
-        on:contextmenu={() => {
-          currentChapter = chapter;
-        }}
-        >
+        <div
+          class="rightChapterMenuElement"
+          on:contextmenu={() => {
+            currentChapter = chapter;
+          }}>
           <SideNavMenu
-          icon={Fade16}
-          bind:expanded={chapter.open}
-          on:click={() => changeChapterOpen(chapter)}
-          text={chapter.title}>
-          <SideNavLink
-            icon={AddAlt20}
-            on:click={() => createScene(chapter.id)}
-            text={$_('sidebar.createScene')} />
-          <SideNavLink
-            icon={Edit16}
-            on:click={() => editChapterFn(chapter)}
-            text={$_('sidebar.editChapter')} />
+            icon={Fade16}
+            bind:expanded={chapter.open}
+            on:click={() => changeChapterOpen(chapter)}
+            text={chapter.title}>
+            <SideNavLink
+              icon={AddAlt20}
+              on:click={() => createScene(chapter.id)}
+              text={$_('sidebar.createScene')} />
+            <SideNavLink
+              icon={Edit16}
+              on:click={() => editChapterFn(chapter)}
+              text={$_('sidebar.editChapter')} />
 
-          {#each $scenes
-            .filter(scene => scene.chapter == chapter.id)
-            .sort((a, b) => a.order - b.order) as scene, sceneIndex}
-            <div
-              on:mouseleave={() => {
-                scenes.setSceneshoeEdit(scene.id, false);
-              }}
-              on:mouseenter={() => {
-                scenes.setSceneshoeEdit(scene.id, true);
-              }}
-            >
+            {#each $scenes
+              .filter(scene => scene.chapter == chapter.id)
+              .sort((a, b) => a.order - b.order) as scene, sceneIndex}
               <div
-                class="rightSceneMenuElement"
-                data-value={scene.id}
-                data-chapterIndex={chapterIndex}
-                data-sceneIndex={sceneIndex}
-                on:click={() => routerLinkFn(scene.id)}
-                on:contextmenu={() => {
-                  currentScene = scene;
+                on:mouseleave={() => {
+                  scenes.setSceneshoeEdit(scene.id, false);
+                }}
+                on:mouseenter={() => {
+                  scenes.setSceneshoeEdit(scene.id, true);
                 }}>
-                <SideNavLink
-                isSelected={scene.id === $state.currentScene}
+                <div
+                  class="rightSceneMenuElement"
+                  data-value={scene.id}
+                  data-chapterIndex={chapterIndex}
+                  data-sceneIndex={sceneIndex}
                   on:click={() => routerLinkFn(scene.id)}
-                  icon={AlignBoxBottomCenter16}
-                  text={scene.title}
-                  class="sideNavMenuItem" />
+                  on:contextmenu={() => {
+                    currentScene = scene;
+                  }}>
+                  <SideNavLink
+                    isSelected={scene.id === $state.currentScene}
+                    on:click={() => routerLinkFn(scene.id)}
+                    icon={AlignBoxBottomCenter16}
+                    text={scene.title}
+                    class="sideNavMenuItem" />
+                </div>
               </div>
-            </div>
-          {/each}
-        </SideNavMenu>
+            {/each}
+          </SideNavMenu>
         </div>
       {/each}
 

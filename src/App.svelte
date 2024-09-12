@@ -12,24 +12,25 @@
   locale.set($settings.language);
   $: document.documentElement.setAttribute("theme", $settings.theme);
   $: {
-    locale.set($settings.language);
+    locale.set("en");
   }
-  const wb = new Workbox("./service-worker.js");
+  // const wb = new Workbox("./service-worker.js");
 
   /**
    * Register Service Worker.
    */
-  if (
-    "serviceWorker" in navigator &&
-    !isRunningCapacitor &&
-    !isRunningElectron &&
-    window.location.hostname !== "localhost"
-  ) {
-    wb.register();
-  }
+  // if (
+  //   "serviceWorker" in navigator &&
+  //   !isRunningCapacitor &&
+  //   !isRunningElectron &&
+  //   window.location.hostname !== "localhost"
+  // ) {
+  //   wb.register();
+  // }
 
   const routeLoaded = () => {
     console.log("路由守卫");
+    console.log("路由守卫1");
   };
 
   onMount(async () => {

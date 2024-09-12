@@ -4,8 +4,8 @@
   import Modal from "carbon-components-svelte/src/Modal/Modal.svelte";
   import TextInput from "carbon-components-svelte/src/TextInput/TextInput.svelte";
   import { chapters } from "src/db/storeChapters";
-import { scenes } from "src/db/storeScenes";
-import { removeChapter } from "src/tools/removeChapter";
+  import { scenes } from "src/db/storeScenes";
+  import { removeChapter } from "src/tools/removeChapter";
 
   export let show = false;
   export let data;
@@ -16,7 +16,7 @@ import { removeChapter } from "src/tools/removeChapter";
   };
 
   const removeChapterFn = chapterId => {
-    removeChapter(chapterId, () =>  show = false )
+    removeChapter(chapterId, () => (show = false));
   };
 
 </script>
