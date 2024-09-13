@@ -68,26 +68,26 @@
         on:click={() => push('/book')}
         text="Overview" />
       <HeaderNavItem on:click={() => push('/book/cards/')} text="" />
-      <HeaderNavItem
-        style="-webkit-app-region: no-drag"
-        on:click={() => push('/book/export/')}
-        text="Outline" />
-      <HeaderNavItem
-        style="-webkit-app-region: no-drag"
-        on:click={() => push('/book/export/')}
-        text="Map" />
-      <HeaderNavItem
-        style="-webkit-app-region: no-drag"
-        on:click={() => push('/book/export/')}
-        text="TimeLine" />
+        <!-- <HeaderNavItem
+             style="-webkit-app-region: no-drag"
+             on:click={() => push('/book/export/')}
+             text="Outline" />
+             <HeaderNavItem
+             style="-webkit-app-region: no-drag"
+             on:click={() => push('/book/export/')}
+             text="Map" />
+             <HeaderNavItem
+             style="-webkit-app-region: no-drag"
+             on:click={() => push('/book/export/')}
+             text="TimeLine" /> -->
       <HeaderNavItem
         style="-webkit-app-region: no-drag"
         on:click={() => push('/book/settings/')}
         text="Setting" />
-      <HeaderNavItem
-        style="-webkit-app-region: no-drag"
-        on:click={() => push('/book/export/')}
-        text="Export" />
+        <!-- <HeaderNavItem
+             style="-webkit-app-region: no-drag"
+             on:click={() => push('/book/export/')}
+             text="Export" /> -->
     </HeaderNav>
     <HeaderUtilities style="-webkit-app-region: no-drag">
       <HeaderAction
@@ -106,11 +106,11 @@
           {/each}
         </HeaderPanelLinks>
       </HeaderAction>
-      <HeaderGlobalAction
-        aria-label="帮助"
-        style="-webkit-app-region: no-drag"
-        on:click={() => (showSupport = true)}
-        icon={Warning16} />
+      <!-- <HeaderGlobalAction
+           aria-label="帮助"
+           style="-webkit-app-region: no-drag"
+           on:click={() => (showSupport = true)}
+           icon={Warning16} /> -->
       {#if isRunningElectron}
         <HeaderGlobalAction
           aria-label="最小化窗口"

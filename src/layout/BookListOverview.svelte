@@ -134,11 +134,3 @@
   </div>
 </Content>
 
-<style>
-  .overview {
-    max-width: 800px;
-    margin: auto;
-    text-align: center;
-  }
-
-</style>

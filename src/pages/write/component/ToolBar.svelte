@@ -18,7 +18,7 @@
   export let cleanTrimButttonFn: (e: MouseEvent) => any;
   let cmdS = saveChapterShortCutFn(saveEdiotrManualFn);
   let cmdF = searchShortCutFn(() => (searchShow = true));
-  const LISTPX = Array.from({ length: 10 }).map((v, k) => k + 13 + "px");
+  const LISTPX = Array.from({ length: 5 }).map((v, k) => k + 13 + "px");
   const changeFontSizeFn = e => {
     $settings.fontSize = e.detail;
     const element: HTMLElement = document.querySelector("#editorjs");
@@ -77,5 +77,3 @@
   </Row>
 </Tile>
 
-<style>
-</style>
