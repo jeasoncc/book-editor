@@ -7,7 +7,7 @@
   import { get } from "svelte/store";
   import { ProjectInterface } from "src/schema/project/project.interface";
   import { ProjectClass } from "src/schema/project/project.class";
-  import Export from "./Export/RTF/collectData";
+ // import Export from "./Export/RTF/collectData";
   import { saveFile } from "src/bridge";
   import { TextExportClass } from "src/tools/export-text";
   import { _ } from "svelte-i18n";
@@ -27,7 +27,7 @@
     return file.download();
   };
   const downloadFn = async (fileName: string) => {
-    let generateDownload = new Export($state.currentProject);
+    // let generateDownload = new Export($state.currentProject);
     const data = await generateDownload.fetchData();
     const blob = new Blob([data.document], {
       type: "text/plain",
@@ -76,10 +76,3 @@
   {/if}
 </div>
 
-<style>
-  .export {
-    margin: auto;
-    max-width: 800px;
-  }
-
-</style>

@@ -179,14 +179,16 @@
 
 <style global>
   .search {
-    position: fixed;
-    right: 2rem;
-    top: 6rem;
-    box-shadow: 0 1px 6px 3px rgba(0, 0, 0, 0.2);
-    z-index: 10;
+    /* position: fixed;
+       right: 2rem;
+       top: 6rem;
+       box-shadow: 0 1px 6px 3px rgba(0, 0, 0, 0.2);
+       z-index: 10;
+       background:red; */
   }
 
   .ag-selection {
+
     margin-right: 0.5em;
     background: gray;
     /* color: purple; */

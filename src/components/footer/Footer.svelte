@@ -57,13 +57,6 @@
         icon={Edit16}>
         {wordsNum}
       </Tag>
-      <!-- <Tag
-        style="margin-left:auto"
-        size="sm"
-        type="high-contrast"
-        icon={TrainSpeed16}>
-        100WPM
-      </Tag> -->
     </Row>
   </Grid>
 </footer>

@@ -270,35 +270,3 @@
   </Grid>
 {/if}
 
-<style lang="scss">
-  * {
-    -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
-    -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important;
-    outline: 0 !important;
-  }
-  .editpane {
-    > h1 {
-      text-align: center;
-    }
-  }
-  .editorToolbar {
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-
-    padding: 1rem;
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    z-index: 8;
-
-    .inner {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      align-content: center;
-      margin: auto;
-      // max-width: 700px;
-    }
-  }
-
-</style>

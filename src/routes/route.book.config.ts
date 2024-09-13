@@ -3,14 +3,14 @@ import RoleCenter from "src/pages/roleCards/RoleCenter.svelte";
 // import Write from "src/pages/Write.svelte";
 import WriteBook from "src/pages/write/WriteBook.svelte";
 import Settings from "src/pages/Settings.svelte";
-import Export from "src/pages/Export.svelte";
+// import Export from "src/pages/Export.svelte";
 import { wrap } from "svelte-spa-router/wrap";
 export const routes = {
   "/": OverviewRoute,
   "*/cards": RoleCenter,
   "*/write/:sceneId?": WriteBook,
   "*/settings": Settings,
-  "*/export": Export,
+  // "*/export": Export,
   // "*/thirdparty": wrap({
   //   asyncComponent: () => import("./shared/ThirdParty.svelte"),
   // }),
