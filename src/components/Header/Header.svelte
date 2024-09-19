@@ -68,7 +68,7 @@
         on:click={() => push('/book')}
         text="Overview" />
       <HeaderNavItem on:click={() => push('/book/cards/')} text="" />
-        <!-- <HeaderNavItem
+      <!-- <HeaderNavItem
              style="-webkit-app-region: no-drag"
              on:click={() => push('/book/export/')}
              text="Outline" />
@@ -84,7 +84,7 @@
         style="-webkit-app-region: no-drag"
         on:click={() => push('/book/settings/')}
         text="Setting" />
-        <!-- <HeaderNavItem
+      <!-- <HeaderNavItem
              style="-webkit-app-region: no-drag"
              on:click={() => push('/book/export/')}
              text="Export" /> -->

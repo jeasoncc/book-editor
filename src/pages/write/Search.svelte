@@ -188,7 +188,6 @@
   }
 
   .ag-selection {
-
     margin-right: 0.5em;
     background: gray;
     /* color: purple; */

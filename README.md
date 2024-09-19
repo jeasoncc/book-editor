@@ -27,4 +27,8 @@ Don't settle for ordinary writing tools when you can have an extraordinary one. 
 Visit our website at www.epiccraft.com to learn more and embark on your epic writing journey!
 
 
+![GitHub](https://img.shields.io/github/license/jeasoncc/Secret-writing)   ![GitHub repo size](https://img.shields.io:/github/repo-size/jeasoncc/Secret-writing)   ![GitHub language count](https://img.shields.io:/github/languages/count/jeasoncc/Secret-writing)   ![GitHub Repo stars](https://img.shields.io:/github/stars/jeasoncc/Secret-writing?style=social)
 
+
+[![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/xiaomiquan)
+[![安裝軟體敬請移駕 Snap Store](https://snapcraft.io/static/images/badges/tw/snap-store-black.svg)](https://snapcraft.io/xiaomiquan)

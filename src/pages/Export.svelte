@@ -7,7 +7,7 @@
   import { get } from "svelte/store";
   import { ProjectInterface } from "src/schema/project/project.interface";
   import { ProjectClass } from "src/schema/project/project.class";
- // import Export from "./Export/RTF/collectData";
+  // import Export from "./Export/RTF/collectData";
   import { saveFile } from "src/bridge";
   import { TextExportClass } from "src/tools/export-text";
   import { _ } from "svelte-i18n";
@@ -75,4 +75,3 @@
     </ClickableTile>
   {/if}
 </div>
-

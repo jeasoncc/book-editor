@@ -76,6 +76,4 @@
         bind:value={$settings.spellCheck} />
     </FormGroup> -->
   </Form>
-
 </div>
-
