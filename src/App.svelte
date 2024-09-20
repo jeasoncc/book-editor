@@ -2,18 +2,17 @@
   import { onMount } from "svelte";
   import Router from "svelte-spa-router";
   import { Workbox } from "workbox-window";
-  import { isRunningElectron, isRunningCapacitor } from "./bridge";
   import { initStoreByDBFn } from "./db/init/initStoreByDB";
   import { initDBFn } from "./db/init/initDB";
-  import { locale } from "svelte-i18n";
-  import { routes } from "src/routes/route.overview.config";
+  import { routes } from "src/constant-route"
   import { settings } from "./db/storeSettings";
 
-  locale.set($settings.language);
-  $: document.documentElement.setAttribute("theme", $settings.theme);
-  $: {
-    locale.set("en");
-  }
+  import Content from "carbon-components-svelte/src/UIShell/Content.svelte";
+ // locale.set($settings.language);
+ // $: document.documentElement.setAttribute("theme", $settings.theme);
+ // $: {
+ //   locale.set("en");
+ // }
   // const wb = new Workbox("./service-worker.js");
 
   /**
@@ -28,19 +27,14 @@
   //   wb.register();
   // }
 
+
+ // onMount(async () => {
+ //   await initDBFn();
+ //   await initStoreByDBFn();
+ // });
+
   const routeLoaded = () => {
-    console.log("路由守卫");
-    console.log("路由守卫1");
   };
-
-  onMount(async () => {
-    await initDBFn();
-    await initStoreByDBFn();
-  });
-
 </script>
 
-<div class="container">
-  <div id="saveTip" />
-  <Router {routes} on:routeLoaded={routeLoaded} />
-</div>
+<Router {routes} on:routeLoaded={routeLoaded} />

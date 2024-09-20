@@ -6,15 +6,17 @@ import Settings from "src/pages/Settings.svelte";
 // import Export from "src/pages/Export.svelte";
 // import Home from "src/layout/home.svelte";
 // import Home from "src/home/index.svelte";
-import Home from "src/page-home/PageHome.svelte";
-
-import { wrap } from "svelte-spa-router/wrap";
+// import Home from "src/page-home/PageHome.svelte";
+// import { wrap } from "svelte-spa-router/wrap";
+import LayoutBook from "../layout-book/LayoutBook.svelte";
+import Page404 from "../page-404/Page404.svelte";
 export const routes = {
-  "/": OverviewRoute,
-  "*/home": Home,
-  "*/cards": RoleCenter,
-  "*/write/:sceneId?": WriteBook,
-  "*/settings": Settings,
+  // "/": OverviewRoute,
+  "/": LayoutBook,
+  // "*/home": Home,
+  // "*/cards": RoleCenter,
+  // "*/write/:sceneId?": WriteBook,
+  // "*/settings": Settings,
   // "*/export": Export,
   // "*/thirdparty": wrap({
   //   asyncComponent: () => import("./shared/ThirdParty.svelte"),
@@ -26,5 +28,5 @@ export const routes = {
   //   asyncComponent: () => import("src/pages/Cloud/Policy.svelte"),
   // }),
   // Catch-all
-  "*": OverviewRoute,
+  "*": Page404,
 };

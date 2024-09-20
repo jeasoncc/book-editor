@@ -16,17 +16,8 @@
     Content,
   } from "./index.js";
 
-  let count = 0;
-  function increment() {
-    count += 1;
-  }
-
 </script>
 
-<div class="component">
-  <h1>LayoutBook 组件</h1>
-  <p>点击次数: {count}</p>
-</div>
 
 <HeaderComponent />
 <SidebarComponent />
