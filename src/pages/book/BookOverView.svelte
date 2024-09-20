@@ -6,7 +6,7 @@
   import RoleInterface from "src/schema/role/role.interface";
   import { SceneInterface } from "src/schema/scene/scene.interface";
   import Introduce from "./components/Introduce.svelte";
-  // import Typing from "./components/Typing.svelte";
+  import Typing from "./components/Typing.svelte";
 
   let wordsNum: number = 0;
   let scenesNum: number = 0;
@@ -50,4 +50,4 @@
 <Introduce {wordsNum} {scenesNum} {rolesNum} />
 <br />
 <br />
-<!-- <Typing {wordsNum} /> -->
+<Typing {wordsNum} />

@@ -1,0 +1,10 @@
+#footer {
+  position: fixed;
+  height: 1.7rem;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  /* background: var(--cds-ui-01,#f4f4f4); */
+  background: var(--cds-inverse-02, #393939);
+  z-index: 100000;
+}

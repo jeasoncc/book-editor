@@ -2,7 +2,6 @@
   import Grid from "carbon-components-svelte/src/Grid/Grid.svelte";
   import Row from "carbon-components-svelte/src/Grid/Row.svelte";
   import Column from "carbon-components-svelte/src/Grid/Column.svelte";
-  import { _ } from "svelte-i18n";
   import Tile from "carbon-components-svelte/src/Tile/Tile.svelte";
 
   export let wordsNum: number = 0;
@@ -16,19 +15,17 @@
     <Column>
       <Tile>
         <h3>{wordsNum}</h3>
-        <p>{$_('overviewPage.wordsNum')}</p>
+        <p>Words Number</p>
       </Tile>
     </Column>
     <Column>
       <Tile>
         <h3>{scenesNum}</h3>
-        <p>{$_('overviewPage.scenesNum')}</p>
       </Tile>
     </Column>
     <Column>
       <Tile>
         <h3>{rolesNum}</h3>
-        <p>{$_('overviewPage.rolesNum')}</p>
       </Tile>
     </Column>
     <!-- <Column>

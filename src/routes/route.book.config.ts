@@ -4,7 +4,10 @@ import RoleCenter from "src/pages/roleCards/RoleCenter.svelte";
 import WriteBook from "src/pages/write/WriteBook.svelte";
 import Settings from "src/pages/Settings.svelte";
 // import Export from "src/pages/Export.svelte";
-import Home from "src/layout/home.svelte";
+// import Home from "src/layout/home.svelte";
+// import Home from "src/home/index.svelte";
+import Home from "src/page-home/PageHome.svelte";
+
 import { wrap } from "svelte-spa-router/wrap";
 export const routes = {
   "/": OverviewRoute,
