@@ -44,7 +44,7 @@
         style="margin-left:auto"
         type="high-contrast"
         icon={Edit16}>
-        wordsNum
+       current-file-name
       </Tag>
     </Row>
   </Grid>

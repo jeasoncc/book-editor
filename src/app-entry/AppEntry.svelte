@@ -7,30 +7,17 @@
  */
 */ -->
 <script>
-    import './index.scss';
-    import {Grid, Row, Column, Tile, RadioTile, TileGroup, items} from './index.js';
-    let count = 0;
-    function increment() {
-        count += 1;
-    }
+  import "./index.scss";
+ // import { Router, routes } from "./index.js";
+ import {link} from 'svelte-spa-router'
+
+import Router from "svelte-spa-router";
+import { routes } from "src/constant-route";
 </script>
 
 <div class="component">
-    <h1>AppEntry 组件</h1>
-  <p>点击次数: {count}</p>
-</div>
+  <a href="/book" use:link>The Little Prince</a>
+  <h1>AppEntry 组件</h1>
+  <Router {routes} />
 
-<Grid noGutter>
-  <Row>
-    <Column sm={{ span: 3, offset: 0 }}>
-      <TileGroup legend="Service pricing tiers" name="plan" selected="standard">
-        {#each items as item}
-          <RadioTile light on:click={increment} value={item.id}>{item.name}</RadioTile>
-        {/each}
-      </TileGroup>
-    </Column>
-    <Column sm={{ span: 1, offset: 0 }}>
-      <Tile>Content</Tile>
-    </Column>
-  </Row>
-</Grid>
+</div>

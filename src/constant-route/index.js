@@ -7,6 +7,6 @@ export const routes = {
     asyncComponent: () => import("../layout-book/LayoutBook.svelte"),
   }),
   "*": wrap({
-    asyncComponent: () => import("../layout-404/Layout404.svelte")
-  })
+    asyncComponent: () => import("../layout-404/Layout404.svelte"),
+  }),
 };

@@ -1,7 +1,7 @@
-import HeaderComponent from "src/components/Header/Header.svelte";
-import SidebarComponent from "src/components/Sidebar/Sidebar.svelte";
-import Foot from "src/component-foot/ComponentFoot.svelte";
+// import HeaderComponent from "src/components/Header/Header.svelte";
+import ComponentHead from "../component-head/ComponentHead.svelte";
+import ComponentFoot from "../component-foot/ComponentFoot.svelte";
+import ComponentSide from "../component-side/ComponentSide.svelte";
 import Router from "svelte-spa-router";
-import Content from "carbon-components-svelte/src/UIShell/Content.svelte";
-// import {routesFunction } from "src/route-function"
-export { HeaderComponent, SidebarComponent, Foot, Router, Content };
+
+export { ComponentHead, ComponentFoot, ComponentSide, Router };

@@ -8,6 +8,4 @@
 //   }),
 // };
 
-export const routesBookFunction = () => {
-
-}
+export const routesBookFunction = () => {};

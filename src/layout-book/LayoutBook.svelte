@@ -8,20 +8,13 @@
 */ -->
 <script>
   import "./index.scss";
-  import {
-    HeaderComponent,
-    SidebarComponent,
-    Foot,
-    Router,
-    Content,
-  } from "./index.js";
+  import { ComponentHead, ComponentFoot, ComponentSide, Router } from "./index.js";
 
 </script>
 
-
-<HeaderComponent />
-<SidebarComponent />
-<Content class="main">
+<ComponentHead/>
+<ComponentSide/>
+<div class="main">
   <!-- <Router {routes} /> -->
-</Content>
-<Foot />
+</div>
+<ComponentFoot/>

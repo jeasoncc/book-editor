@@ -61,6 +61,16 @@ cat <<EOL > "$component_path/${component_name_camel_case}.svelte"
 </script>
 
 <div class="component">
+    <p>点击次数: {count}</p>
+    <button on:click={increment}>点击我</button>
+    <ul>
+        {#each items as item}
+            <li>{item.name}</li>
+        {/each}
+    </ul>
+</div>
+
+<div class="component">
     <h1>$component_name_camel_case 组件</h1>
   <p>点击次数: {count}</p>
 </div>
