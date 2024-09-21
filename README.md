@@ -7,6 +7,10 @@
                 \                                                                      /
                  ----------------------------------------------------------------------
 
+![圖片說明](https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,w_1638,h_920/https://dashboard.snapcraft.io/site_media/appmedia/2022/01/2022-01-08_21-50-45%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE3.jpeg)
+
+![圖片說明2](https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,w_1638,h_920/https://dashboard.snapcraft.io/site_media/appmedia/2022/01/2022-01-08_21-57-55%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png)
+
 Introducing EpicCraft - The Ultimate Writing Tool for Epic Storytellers
 
 Are you an aspiring novelist, a passionate writer of epic tales, or a seasoned author looking for the perfect writing companion? Look no further! EpicCraft is here to revolutionize your writing experience.
@@ -32,3 +36,17 @@ Visit our website at www.epiccraft.com to learn more and embark on your epic wri
 
 [![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/xiaomiquan)
 [![安裝軟體敬請移駕 Snap Store](https://snapcraft.io/static/images/badges/tw/snap-store-black.svg)](https://snapcraft.io/xiaomiquan)
+
+    +----------+     +------------+     +------------+
+    | Electron | --> |            | <-- | Typescript |
+    +----------+     | BookEditor |     +------------+
+                     |            |     +------------+
+                     |            | <-- | LocalForge |
+                     +------------+     +------------+
+                       ^
+                       |
+                       |
+                     +------------+
+                     |  Sevelte   |
+                     +------------+
+
